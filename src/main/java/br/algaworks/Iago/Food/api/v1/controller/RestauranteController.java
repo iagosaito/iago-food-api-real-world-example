@@ -141,7 +141,7 @@ public class RestauranteController implements RestauranteControllerOpenApi {
 
     @CheckSecurity.Restaurantes.PodeGerenciarCadastro
     @Override
-    @PutMapping("/ativacoes}")
+    @PutMapping("/ativacoes")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void ativarMultiplos(@RequestBody List<Long> restauranteIds) {
         try {
@@ -153,7 +153,7 @@ public class RestauranteController implements RestauranteControllerOpenApi {
 
     @CheckSecurity.Restaurantes.PodeGerenciarCadastro
     @Override
-    @DeleteMapping("/ativacoes}")
+    @DeleteMapping("/ativacoes")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void desativarMultiplos(@RequestBody List<Long> restauranteIds) {
         try {
